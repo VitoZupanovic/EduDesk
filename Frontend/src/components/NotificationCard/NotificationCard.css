@@ -1,0 +1,49 @@
+.notification-card {
+  border-top: 3px solid var(--color-accent-cyan);
+}
+
+.notification-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.notification-card-header h3 {
+  margin: 0;
+  color: var(--color-accent-blue);
+  font-size: 1.1rem;
+}
+
+.notification-card-header span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.notification-card-text {
+  margin: var(--space-sm) 0;
+}
+
+.notification-card-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-sm);
+  margin: 0;
+}
+
+.notification-card-meta dt {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.notification-card-meta dd {
+  margin: 0;
+}
+
+.notification-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}

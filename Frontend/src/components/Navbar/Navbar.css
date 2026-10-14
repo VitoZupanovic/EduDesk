@@ -1,0 +1,111 @@
+/* Navbar styles.
+   Bootstrap handles layout and the responsive collapse.
+   Only colors and small overrides go here, using global.css variables. */
+
+.app-navbar {
+  background-color: var(--color-nav-bg) !important;
+  border-bottom: 3px solid var(--color-accent-blue);
+}
+
+.app-navbar .navbar-brand {
+  color: var(--color-on-dark);
+  letter-spacing: 0.3px;
+}
+
+.app-navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.navbar-brand-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.app-navbar .nav-link {
+  color: var(--color-on-dark);
+  border-bottom: 2px solid transparent;
+}
+
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link:focus {
+  background-color: var(--color-nav-hover);
+  border-radius: var(--radius-sm);
+  color: var(--color-on-dark);
+}
+
+.app-navbar .nav-link.active {
+  font-weight: 600;
+  color: var(--color-on-dark);
+  border-bottom-color: var(--color-accent-cyan);
+}
+
+/* Bootstrap's mobile toggler needs to stay visible on the dark bar. */
+.app-navbar .navbar-toggler {
+  border-color: var(--color-border);
+}
+
+.app-navbar .navbar-toggler-icon {
+  filter: invert(1) grayscale(100%) brightness(2);
+}
+
+.user-menu-wrapper {
+  position: relative;
+}
+
+.user-avatar-button {
+  border: none;
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--color-nav-hover);
+  color: var(--color-on-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.user-menu-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 180px;
+  background-color: var(--color-nav-bg);
+  border: 1px solid var(--color-border);
+  z-index: 1000;
+}
+
+.user-menu-item {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  color: var(--color-on-dark);
+  text-decoration: none;
+  text-align: left;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.15s ease;
+}
+
+.user-menu-item:hover,
+.user-menu-item:focus {
+  background-color: var(--color-nav-hover);
+  color: var(--color-on-dark);
+}
+
+.user-menu-button {
+  cursor: pointer;
+  font-family: inherit;
+}

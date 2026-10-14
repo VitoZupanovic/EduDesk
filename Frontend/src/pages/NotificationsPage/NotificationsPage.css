@@ -1,0 +1,10 @@
+.notifications-form-title {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  color: var(--color-accent-blue);
+  font-size: 1.15rem;
+}
+
+.notifications-textarea {
+  min-height: 110px;
+}

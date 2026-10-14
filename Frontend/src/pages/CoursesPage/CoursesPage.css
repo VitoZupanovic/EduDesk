@@ -1,0 +1,58 @@
+/* CoursesPage-specific layout only.
+   Page container, headers and cards come from global.css. */
+
+.courses-page__header,
+.courses-toolbar,
+.courses-page__content {
+  width: 100%;
+}
+
+.courses-page__header {
+  margin-bottom: 0;
+}
+
+.courses-page__actions {
+  flex-shrink: 0;
+}
+
+.courses-toolbar {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.courses-search {
+  width: 100%;
+  max-width: 420px;
+}
+
+.courses-search .app-form-control {
+  border-left: 2px solid var(--color-accent-blue);
+}
+
+.courses-empty-state {
+  margin-top: 0;
+}
+
+/* Responsive grid of course cards.
+   Desktop/tablet: cards sit side by side.
+   Mobile: cards stack naturally. */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.courses-form-card {
+  margin-bottom: var(--space-md);
+}
+
+.courses-form-title {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  color: var(--color-accent-blue);
+  font-size: 1.15rem;
+}
+
+.courses-details-textarea {
+  min-height: 100px;
+}

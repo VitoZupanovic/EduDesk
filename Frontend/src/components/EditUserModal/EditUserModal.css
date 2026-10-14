@@ -1,0 +1,144 @@
+.eum-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-modal-backdrop);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.eum {
+  background: var(--color-surface);
+  border-radius: 10px;
+  padding: 1.75rem;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.eum__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eum__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.eum__close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.eum__close:hover { color: var(--color-text); }
+
+
+.eum__fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.eum__row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.eum__row .eum__field {
+  flex: 1;
+}
+
+.eum__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.eum__label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.eum__input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.eum__input:focus    { border-color: var(--color-accent-blue); }
+.eum__input:disabled { opacity: 0.6; cursor: not-allowed; }
+
+
+.eum__role-group {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.eum__role-btn {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background: none;
+  border: none;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.eum__role-btn:last-child {
+  border-right: none;
+}
+
+.eum__role-btn:hover:not(:disabled) {
+  background: var(--color-bg-subtle);
+  color: var(--color-text);
+}
+
+.eum__role-btn--active {
+  background: var(--color-accent-blue-subtle);
+  color: var(--color-accent-blue);
+  font-weight: 600;
+}
+
+.eum__role-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.eum__error {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-accent-orange);
+}
+
+.eum__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-top: auto;
+  padding-top: var(--space-md);
+}

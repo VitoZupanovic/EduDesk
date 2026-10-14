@@ -1,0 +1,6 @@
+@Elmer_PAAD_Infoeduka_HostAddress = http://localhost:5289
+
+GET {{Elmer_PAAD_Infoeduka_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

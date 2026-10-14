@@ -1,0 +1,72 @@
+/* CourseCard-specific layout only.
+   Background, border, padding come from .app-card in global.css. */
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-top: 3px solid var(--color-accent-blue);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-1px);
+}
+
+.course-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.course-card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-accent-blue);
+}
+
+.course-card-ects {
+  font-size: 0.85rem;
+  color: var(--color-accent-orange);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.course-card-description {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.course-card-details {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.course-card-lecturer {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.course-card-enrolled {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.course-card-label {
+  font-weight: 600;
+}
+
+.course-card-lecturer-email {
+  color: var(--color-text-muted);
+}
+
+.course-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}

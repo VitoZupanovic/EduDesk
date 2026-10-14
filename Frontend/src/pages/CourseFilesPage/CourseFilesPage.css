@@ -1,0 +1,45 @@
+.course-files-form-title {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  color: var(--color-accent-blue);
+  font-size: 1.15rem;
+}
+
+.course-files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.course-file-card {
+  border-top: 3px solid var(--color-accent-orange);
+}
+
+.course-file-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.course-file-card-header h3 {
+  margin: 0;
+  color: var(--color-accent-blue);
+  font-size: 1.1rem;
+}
+
+.course-file-card-header span,
+.course-file-card p {
+  color: var(--color-text-muted);
+}
+
+.course-file-card p {
+  margin: var(--space-sm) 0;
+}
+
+.course-file-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}

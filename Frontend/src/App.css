@@ -1,0 +1,13 @@
+/* App shell layout only.
+   Color/spacing tokens live in src/styles/global.css. */
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell > main,
+.app-shell > .page-container {
+  flex: 1;
+}

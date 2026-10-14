@@ -1,0 +1,29 @@
+name: run .NET tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: setup .NET 8
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: restore dependencies
+        run: dotnet restore Elmer_PAAD_Infoeduka.sln
+
+      - name: build solution
+        run: dotnet build Elmer_PAAD_Infoeduka.sln --no-restore --configuration Release
+
+      - name: run tests
+        run: dotnet test Elmer_PAAD_Infoeduka.sln --no-build --configuration Release --verbosity normal

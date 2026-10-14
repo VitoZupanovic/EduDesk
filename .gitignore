@@ -1,0 +1,41 @@
+# Visual Studio and editors
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.rsuser
+*.sln.docstates
+
+# .NET build output
+bin/
+obj/
+publish/
+artifacts/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+build/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.json
+appsettings.*.json
+!appsettings.Example.json
+
+# Logs
+*.log
+
+# Database files and backups
+*.mdf
+*.ldf
+*.ndf
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db

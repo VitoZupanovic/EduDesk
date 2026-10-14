@@ -1,0 +1,79 @@
+.confirm-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background-color: var(--color-modal-backdrop);
+}
+
+.confirm-modal {
+  width: 420px;
+  max-width: 100%;
+  padding: 0;
+  background-color: var(--color-figma-card);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.confirm-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.2rem;
+  background-color: var(--color-figma-header);
+}
+
+.confirm-modal-header h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.confirm-modal-close {
+  border: none;
+  color: var(--color-text);
+  background: transparent;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.confirm-modal-body {
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.confirm-modal-body p {
+  margin: 0;
+}
+
+.confirm-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 0 1.2rem 1.2rem;
+}
+
+.confirm-modal-actions button {
+  min-width: 95px;
+  height: 34px;
+  border-radius: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.confirm-modal-actions .app-button-danger {
+  border-color: var(--color-confirm-danger);
+  color: var(--color-on-dark);
+  background-color: var(--color-confirm-danger);
+}
+
+.confirm-modal-actions .app-button-danger:hover {
+  border-color: var(--color-confirm-danger-hover);
+  color: var(--color-on-dark);
+  background-color: var(--color-confirm-danger-hover);
+}

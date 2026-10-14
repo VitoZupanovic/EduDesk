@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmer_PAAD_Infoeduka", "Elmer_PAAD_Infoeduka\Elmer_PAAD_Infoeduka.csproj", "{2A4F0043-2BAC-1E9C-97B6-6D05CEF5F0C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmer_PAAD_Infoeduka.Tests", "Elmer_PAAD_Infoeduka.Tests\Elmer_PAAD_Infoeduka.Tests.csproj", "{7F0E3FE0-1156-2AA7-A351-831484437A4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A4F0043-2BAC-1E9C-97B6-6D05CEF5F0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4F0043-2BAC-1E9C-97B6-6D05CEF5F0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4F0043-2BAC-1E9C-97B6-6D05CEF5F0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4F0043-2BAC-1E9C-97B6-6D05CEF5F0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0E3FE0-1156-2AA7-A351-831484437A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0E3FE0-1156-2AA7-A351-831484437A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0E3FE0-1156-2AA7-A351-831484437A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0E3FE0-1156-2AA7-A351-831484437A4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CA6EB0F-1CEC-410C-84E1-86E7D066D8EF}
+	EndGlobalSection
+EndGlobal

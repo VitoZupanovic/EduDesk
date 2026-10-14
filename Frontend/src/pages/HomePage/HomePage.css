@@ -1,0 +1,65 @@
+/* HomePage-specific layout only.
+   Colors, buttons and base card come from global.css. */
+
+.home-welcome {
+  margin: 0.25rem 0 0 0;
+  color: var(--color-text-muted);
+}
+
+/* Responsive grid of navigation cards.
+   Desktop: multiple cards per row.
+   Mobile: cards stack naturally because minmax falls back to 1 column. */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-height: 170px;
+  border-top: 3px solid var(--color-accent-blue);
+}
+
+.home-card-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent-blue);
+}
+
+.home-card-text {
+  margin: 0;
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+/* Login call-to-action card on the public home view. */
+.home-login-card {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-top: 3px solid var(--color-accent-blue);
+}
+
+@media (min-width: 992px) {
+  .home-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .home-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
